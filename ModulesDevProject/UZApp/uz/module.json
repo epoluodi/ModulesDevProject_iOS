@@ -1,0 +1,8 @@
+[
+ {
+    "name":"ModuleTCPlay",
+    "class":"UZModuleTCPlay",
+    "methods":["addbutton"],
+    "launchClassMethod":"launch"
+ }
+]

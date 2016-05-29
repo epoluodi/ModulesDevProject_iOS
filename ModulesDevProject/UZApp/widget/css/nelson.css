@@ -1,0 +1,189 @@
+/*
+ * CSS Document
+ * Creat by Nelson 2016/01/29
+ * [Nelson] Copyright (c) 2015. All Rights Reserved.
+ *
+ * http://222.171.146.8/Lresume/
+ *
+ * Common style to reset CSS
+ * */
+*{box-sizing: border-box;}
+html,body{
+	background-color: #f8f8f8;
+	font-size: 0.625rem;
+}
+.wrap_button_group{
+	width: 100%;
+	height: 45px;
+	padding: 0 15px;
+}
+.wrap_button_group .wrap_button{
+	width: 100%;
+	border: none;
+	height: 45px;
+	padding: 0;
+	line-height: 45px;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+}
+ul{
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+li{
+	list-style: none;
+}
+span{display: block;}
+.overflow_single{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.overflow_for_multiple{
+	overflow : hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	display:-moz-box;
+	-moz-box-orient:vertical;
+	display:box;
+	box-orient:vertical;
+}
+.overflow_for_third{
+	overflow : hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	display:-moz-box;
+	-moz-box-orient:vertical;
+	display:box;
+	box-orient:vertical;
+}
+.fix{zoom:1;}
+.fix:after{display:block; content:'clear'; clear:both; line-height:0; visibility:hidden;} 
+
+p,span{
+	font-size: 1.2rem;
+}
+
+h2{
+	font-size: 1.6rem;
+	width: 100%;
+	padding: 5px 0;
+}
+h3{
+	font-size: 1.4rem;
+	width: 100%;
+	padding: 5px 0;
+}
+h4{
+	font-size: 1.2rem;
+	width: 100%;
+	padding: 5px 0;
+}
+input,button,textarea{
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	outline: none;
+}
+
+/*右侧箭头 文字 左侧标题 图标 的通用列表*/
+ul.nelsonList{
+	width: 100%;
+}
+ul.nelsonList li{
+	width: 100%;
+	height: 50px;
+	position: relative;
+}
+ul.nelsonList li:after{
+	position: absolute;
+	content: "";
+	height: 1px;
+	left: 10px;
+	bottom: 0;
+	right: 10px;
+	background: #EBEBEB;
+	-webkit-transform: scaleY(.5);
+	transform: scaleY(.5);
+}
+ul.nelsonList li p{
+	width: 100%;
+	font-size: 1.4rem;
+	color: #5c5c5c;
+	height: 50px;
+	line-height: 50px;
+	padding-left: 15px;
+}
+ul.nelsonList li span.rightPoint{
+	color: #979797;
+	position: absolute;
+	right: 15px;
+	top: 13px;
+	/*font-size: 17px;*/
+	font-size: 2.0rem;
+}
+ul.nelsonList li .hasrightPoint p{
+	padding-right: 30px;
+}
+ul.nelsonList li.hasrightWord p{
+	padding-right: 150px;
+}
+ul.nelsonList li.hasrightWord .rightWord{
+	width: 150px;
+	text-align: right;
+	position: absolute;
+	top: 0;
+	right: 10px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 1.3rem;
+	color: #979797;
+}
+ul.nelsonList li.hasLeftIcon p{
+	padding-left: 30px;
+}
+ul.nelsonList li.hasLeftIcon span.fa:first-child{
+	position: absolute;
+	top: 9px;
+	width: 25px;
+	height: 25px;
+	font-size: 2rem;
+	color: #169b75;
+	line-height: 25px;
+	text-align: center;
+	left: 0;
+}
+ul.nelsonList li.hasrightWord .rightWord input{text-align: right;}
+ul.nelsonList li.hasrightPoint.hasrightWord .rightWord{
+	font-size: 1.4rem;
+	right: 30px;
+}
+.nelsonVerTab{
+	font-size: 1.2rem;
+	position: relative;
+	width: 100%;
+}
+.nelsonVerTab .menuList{
+	width: 80px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-right: #EBEBEB 1px solid;
+}
+.nelsonVerTab .menuList li{
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	border-bottom: #EBEBEB 1px solid;
+}
+.nelsonVerTab .contentList{
+	width: 100%;
+	padding-left: 80px;
+}

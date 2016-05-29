@@ -1,0 +1,81 @@
+html,body {
+	font-size: 14px;
+	height: 100%;
+}
+.hover {
+	opacity: .8;
+}
+
+.flex-wrap {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+}
+
+.flex-con {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	flex: 1;
+}
+
+.flex-vertical {
+	-webkit-box-orient: vertical;
+	-webkit-flex-flow: column;
+	flex-flow: column;
+}
+
+#wrap {
+	height: 100%;
+}
+
+header {
+	background-color: #f2f2f2;
+}
+
+header ul li {
+	display: none;
+}
+
+header ul li.active {
+	display: block;
+}
+
+#footer {
+	background-color: #FFFFFF;
+}
+
+#footer ul li {
+	padding-top: 36px;
+	padding-bottom: 4px;
+	background: url() no-repeat center 2px;
+	background-size: auto 30px;
+	text-align: center;
+}
+
+#footer ul li.active {
+	color: #6ab494;
+}
+
+#footer ul li:nth-child(1) {
+	background-image: url(../../image/main/coursesHover.png);
+}
+
+#footer ul li:nth-child(2) {
+	background-image: url(../../image/main/mineHover.png);
+}
+
+#footer ul li:nth-child(3) {
+	background-image: url(../../image/main/settingHover.png);
+}
+
+#footer ul li:nth-child(1).active {
+	background-image: url(../../image/main/courses.png);
+}
+
+#footer ul li:nth-child(2).active {
+	background-image: url(../../image/main/mine.png);
+}
+
+#footer ul li:nth-child(3).active {
+	background-image: url(../../image/main/setting.png);
+}

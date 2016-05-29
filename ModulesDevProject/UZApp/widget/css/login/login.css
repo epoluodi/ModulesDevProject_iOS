@@ -1,0 +1,64 @@
+html,body,#wrap,#main{
+	height: 100%;
+}
+.commonNavBar{
+	background: #F8F8F8;
+}
+.commonNavBar span{
+	color: #169B75;
+}
+#main{
+	padding-top: 100px;
+}
+.logiTitle{
+	text-align: center;
+	font-size: 1.7rem;
+	color: #6a6a6a;
+}
+.apiForm{
+	margin-top: 15px;
+}
+.loginProtocalRow{
+	width: 100%;
+	height: 40px;
+}
+.loginProtocalRow p,.loginProtocalRow a{
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+	font-size: 1.4rem;
+	color: #454545;
+	text-align: center;
+}
+.loginProtocalRow a{
+	color: #169B75;
+}
+.thirdLogin{
+	width: 200px;
+	margin: 0 auto;
+}
+.thirdLogin li{
+	width: 50%;
+	float: left;
+}
+.thirdLogin li img{
+	width: 40%;
+	display: block;
+	margin: 0 auto;
+}
+h4.thirdLoginTitle{
+	color: #979797;
+	text-align: center;
+	height: 30px;
+	font-size: 1.4rem;
+	font-weight: normal;
+	line-height: 30px;
+	margin: 30px 0 20px 0;
+}
+.thirdLogin li span{
+	margin-top: 5px;
+	text-align: center;
+	width: 100%;
+	height: 25px;
+	line-height: 25px;
+}

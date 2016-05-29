@@ -1,0 +1,213 @@
+html,body{
+	background: #FFFFFF;
+}
+.topBg{
+	width: 100%;
+}
+.topBg .topContent{
+	position: relative;
+	color: #FFFFFF;
+	padding: 30px 20px;
+	width: 100%;
+	background: rgba(0,0,0,.7);
+}
+.topBg .topContent .topLeft{
+	width: 100%;
+	/*padding-right: 135px;*/
+}
+.topBg .topContent .topLeft h3{
+	font-weight: normal;
+	height: 30px;
+	padding: 0;
+	line-height: 30px;
+}
+.topBg .topContent .topLeft .topLeftButtonGroup{
+	height: 40px;
+	width: 100%;
+}
+.topBg .topContent .topLeft .topLeftButtonGroup button{
+	font-size: 1.6rem;
+	padding:0 30px;
+	background: #169B75;
+	color: #FFFFFF;
+	height: 40px;
+	/*border-radius: 8px;*/
+	/*-webkit-border-radius: 8px;*/
+	float: left;
+	line-height: 40px;
+}
+.topBg .topContent .topLeft .topLeftButtonGroup button.negtive{
+	background: #d5d5d5;
+	color: #454545;
+}
+.topBg .topContent .topLeft .topLeftButtonGroup span{
+	font-size: 1.4rem;
+	display: inline-block;
+	height: 35px;
+	line-height: 40px;
+	padding-left: 5px;
+}
+.topBg .topContent .topLeft p{
+	height: 30px;
+	line-height: 30px;
+	font-size: 1.4rem;
+}
+.topBg .topContent .topLeft p.zy{
+	height: 50px;
+	font-size: 2rem;
+	line-height: 25px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.topBg .topContent .topRight{
+	padding: 15px 0;
+	width: 120px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.topBg .topContent .topRight p{
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	width: 100%;
+	font-size: 1.4rem;
+}
+.topBg .topContent .topRight p:first-child{
+	margin-top: 25px;
+}
+.topBg .topContent .topRight p:nth-child(2){
+	height: 50px;
+	line-height: 50px;
+	font-size: 6em;
+}
+.topBg .topContent .topRight p:last-child{
+	margin-top: 10px;
+}
+.coursesContent{
+	position: relative;
+	padding: 15px;
+	background: #FFFFFF;
+}
+.coursesContent article{
+	text-indent: 2em;
+	font-size: 1.4rem;
+	color: #979797;
+	line-height: 20px;
+	padding: 10px 0;
+}
+.introductionMenu{
+	width: 100%;
+	margin-top: 10px;
+	padding-bottom: 10px;
+	position: relative;
+}
+.introductionMenu:before{
+	height: 1px;
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #169B75;
+}
+.introductionMenu li{
+	width: 33.333%;
+	float:left;
+	position: relative;
+}
+.introductionMenu li.active:after{
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 3px;
+	bottom: -11px;
+	background: #169B75;
+	left: 0;
+}
+.introductionMenu li span.menuIcon{
+	margin: 0 auto;
+	width: 30px;
+	height: 30px;
+	background: url(../../image/courses/menu0.png) no-repeat;
+	background-size: 100%;
+}
+.introductionMenu li span.menuText{
+	color: #5C5C5C;
+	height: 20px;
+	line-height: 20px;
+	width: 100%;
+	text-align: center;
+}
+.introductionMenu li:nth-child(2) span.menuIcon{
+	background: url(../../image/courses/menu1.png) no-repeat;
+	background-size: 100%;
+}
+.introductionMenu li:nth-child(3) span.menuIcon{
+	background: url(../../image/courses/menu2.png) no-repeat;
+	background-size: 100%;
+}
+
+
+.chapterList{
+	position: absolute;
+	background: rgba(0,0,0,.5);
+	border-right: #EBEBEB 1px solid;
+	box-shadow: #D1D1D1;
+	-webkit-box-shadow: #D1D1D1;
+	width: 100%;
+	transition: all 1s;
+	padding: 15px;
+	overflow: hidden;
+	top: 0;
+	height: 100%;
+	left: 0;
+}
+.chapterList li{
+	width: 100%;
+	overflow: hidden;
+}
+.chapterList.active{
+	padding: 15px;
+	left: 0;
+}
+.fa-play-circle-o{
+	font-size: 2.5rem;
+	color: #979797;
+}
+#process{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	z-index: 10000;
+}
+#process img{width: 100%;}
+#zan{
+	width: 100px;
+	height: 40px;
+	position: absolute;
+	right: 10px;
+	bottom: 30px;
+}
+#zan span.fa{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	font-size: 2.2rem;
+	height: 25px;
+	margin: 0 auto;
+}
+#zan span.zanNum{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+}
+ul.nelsonList li.hasrightWord p{
+	padding-right: 60px;
+}
+ul.nelsonList li.hasrightWord .rightWord{
+	width: 60px;
+}

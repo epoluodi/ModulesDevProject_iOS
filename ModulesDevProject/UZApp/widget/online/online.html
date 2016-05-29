@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,initial-scale=1.0,width=device-width"/>
+		<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+		<title>Hello APP</title>
+		<link rel="stylesheet" type="text/css" href="../css/api.css"/>
+		<link rel="stylesheet" href="../css/font-awesome-4.4.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/nelson.css" />
+		<link rel="stylesheet" href="../css/main/settings.css" />
+	</head>
+	<body>
+		<div id="wrap">
+			<header class="commonNavBar" style="height: 45px;">
+				<div class="headerInner">
+					<span class="navBarLeftSpan leftIconNav navBarBack fa fa-angle-left"></span>
+					<h2>云鹊在线</h2>
+					<!--<span class="navBarRightSpan rightIconNav" id="editUinfoBtn">编辑</span>-->
+				</div>
+			</header>
+			<div id="main" style="padding-top: 340px">
+				<p style="padding: 10px;background: rgb(247, 253, 239);line-height: 20px;font-size: 1.4rem;color: #5C5C5C;text-index
+					2em">
+					<span style="font-size: 1.6rem;line-height: 25px;">教师简介：</span>
+						曾任北京某三甲医院主治医师，医学硕士。自2008年起专业从事医学考试研究与培训。系医学教育网独家授课老师，梦想成真系列丛书主编。
+				</p>
+				<p style="padding: 10px;line-height: 20px;font-size: 1.4rem;text-indent: 2em;">
+					他讲课风格鲜明，坚持“不择一切手段记住重要知识点”的教学思路，综合运用表格、口诀、图片等多种手段，将枯燥的医学知识跟常见事物联系起来，使考生形成持久的记忆。他讲授的“腹外疝、消化道出血、门静脉高压、烧伤补液、运动系统、病理学、药理学、口腔组织病理学”等一大批课程被数以万计的学员奉为经典。由他主讲的冲刺串讲课程，因其被反复证明的实战效果，而得到历届考生的口口相传。
+				</p>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../script/api.js"></script>
+	<script type="text/javascript" src="../script/common.js"></script>
+	<script type="text/javascript">
+		apiready = function() {
+			setTimeout(function(){
+				api.setFullScreen({
+				  fullScreen: false
+				});
+			},500)
+			if(api.systemType == "ios"){
+				$api.fixStatusBar($api.dom('header'));
+			}
+			api.addEventListener({
+				name : 'keyback'
+			}, function(ret, err) {
+				api.setFullScreen({
+				  fullScreen: false
+				});
+				api.closeWin({});
+			});
+			var backBtn = document.querySelector(".navBarBack");
+			if (backBtn) {
+				$api.addEvt(backBtn, "click", function() {
+					api.setFullScreen({
+					  fullScreen: false
+					});
+					api.closeWin({});
+				})
+			}
+			var UZModuleTCPlay = api.require('ModuleTCPlay');
+			var param = {
+				x : 1,
+				y : 45 + statusBarHeight(),
+				w : api.frameWidth - 2,
+				h : 280,
+				videoUrl : "http://2817.liveplay.myqcloud.com/2817_c19504a51f6411e6b91fa4dcbef5e35a_900.m3u8"
+			};
+			UZModuleTCPlay.addbutton(null,null);
+		};
+	</script>
+</html>

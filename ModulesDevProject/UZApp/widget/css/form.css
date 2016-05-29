@@ -1,0 +1,56 @@
+form.apiForm{
+	width: 100%;
+	padding: 0 30px;
+}
+form.apiForm .apiFormRow{
+	position: relative;
+	margin-bottom: 15px;
+	width: 100%;
+	height: 45px;
+	border: #e5e5e5 1px solid;
+	border-radius: 8px;
+	-webkit-border-radius: 5px;
+	overflow: hidden;
+	background: #FFFFFF;
+}
+form.apiForm .apiFormRow input.apiFormInput{
+	width: 100%;
+	padding: 14px 10px;
+	font-size: 1.4rem;
+}
+form.apiForm .apiFormRow.vcodeRow input.apiFormInput{
+	padding-right: 110px;
+}
+form.apiForm .apiFormRow.vcodeRow .vcodeBtn{
+	transition: all 1s; 
+	height: 45px;
+	width: 100px;
+	line-height: 45px;
+	color: #FFFFFF;
+	background: #169B75;
+	border: none;
+	position: absolute;
+	right: 0;
+	font-size: 1.4rem;
+	top: 0;
+}
+form.apiForm .apiFormRow.vcodeRow .vcodeBtn.disab{
+	background: #d1d1d1;
+	color: #6a6b70;
+}
+form.apiForm .apiFormRow.wrapBtnRow{border: none;}
+form.apiForm .apiFormRow .wrapBtn{
+	font-size: 1.6rem;
+	width: 100%;
+	height: 45px;
+	background: #d1d1d1;
+	color: #6a6b70;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+}
+form.apiForm a.forgetPwd{
+	display: block;
+	text-align: center;
+	font-size: 1.4rem;
+	color: #169B75;
+}
