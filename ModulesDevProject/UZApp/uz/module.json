@@ -2,7 +2,7 @@
  {
     "name":"ModuleTCPlay",
     "class":"UZModuleTCPlay",
-    "methods":["addbutton"],
+    "methods":["initTCPlayView"],
     "launchClassMethod":"launch"
  }
 ]
