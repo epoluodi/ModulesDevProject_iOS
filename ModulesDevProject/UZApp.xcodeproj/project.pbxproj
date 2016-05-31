@@ -539,6 +539,7 @@
 				TargetAttributes = {
 					527BCF6A19C431480077631F = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = RK2BTW6E76;
 					};
 				};
 			};
@@ -748,6 +749,7 @@
 					"-force_load",
 					"$(PROJECT_DIR)/UZApp/UZEngine/libUZEngine.a",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = epoluodi.apicloud.UZApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "UZApp/UZModules/UZApp-Bridging-Header.h";
@@ -788,6 +790,7 @@
 					"-force_load",
 					"$(PROJECT_DIR)/UZApp/UZEngine/libUZEngine.a",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = epoluodi.apicloud.UZApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "UZApp/UZModules/UZApp-Bridging-Header.h";

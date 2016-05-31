@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		7B19BF6E1CFC588F00930EF1 /* TCPlayerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B19BF6D1CFC588F00930EF1 /* TCPlayerSDK.framework */; };
 		7B19BF751CFC730F00930EF1 /* TCPlayItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B19BF741CFC730F00930EF1 /* TCPlayItem.m */; };
+		7B19BF791CFDC11900930EF1 /* TCPlayerBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B19BF781CFDC11900930EF1 /* TCPlayerBottomView.m */; };
+		7B19BF7C1CFDC14E00930EF1 /* TCPlayerSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B19BF7B1CFDC14E00930EF1 /* TCPlayerSlider.m */; };
 		7B5AE2E11CFB3391006F0451 /* UZModuleTCPlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AE2E01CFB3391006F0451 /* UZModuleTCPlay.m */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +30,10 @@
 		7B19BF6D1CFC588F00930EF1 /* TCPlayerSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TCPlayerSDK.framework; sourceTree = "<group>"; };
 		7B19BF731CFC730F00930EF1 /* TCPlayItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPlayItem.h; sourceTree = "<group>"; };
 		7B19BF741CFC730F00930EF1 /* TCPlayItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPlayItem.m; sourceTree = "<group>"; };
+		7B19BF771CFDC11900930EF1 /* TCPlayerBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPlayerBottomView.h; sourceTree = "<group>"; };
+		7B19BF781CFDC11900930EF1 /* TCPlayerBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPlayerBottomView.m; sourceTree = "<group>"; };
+		7B19BF7A1CFDC14E00930EF1 /* TCPlayerSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPlayerSlider.h; sourceTree = "<group>"; };
+		7B19BF7B1CFDC14E00930EF1 /* TCPlayerSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPlayerSlider.m; sourceTree = "<group>"; };
 		7B5AE2BE1CFB3041006F0451 /* libQPlayerModule.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libQPlayerModule.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B5AE2DB1CFB3349006F0451 /* NSDictionaryUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionaryUtils.h; sourceTree = "<group>"; };
 		7B5AE2DC1CFB3349006F0451 /* UZAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UZAppDelegate.h; sourceTree = "<group>"; };
@@ -60,6 +66,10 @@
 		7B19BF721CFC72FF00930EF1 /* TCPClass */ = {
 			isa = PBXGroup;
 			children = (
+				7B19BF7A1CFDC14E00930EF1 /* TCPlayerSlider.h */,
+				7B19BF7B1CFDC14E00930EF1 /* TCPlayerSlider.m */,
+				7B19BF771CFDC11900930EF1 /* TCPlayerBottomView.h */,
+				7B19BF781CFDC11900930EF1 /* TCPlayerBottomView.m */,
 				7B19BF731CFC730F00930EF1 /* TCPlayItem.h */,
 				7B19BF741CFC730F00930EF1 /* TCPlayItem.m */,
 			);
@@ -163,6 +173,8 @@
 			files = (
 				7B5AE2E11CFB3391006F0451 /* UZModuleTCPlay.m in Sources */,
 				7B19BF751CFC730F00930EF1 /* TCPlayItem.m in Sources */,
+				7B19BF7C1CFDC14E00930EF1 /* TCPlayerSlider.m in Sources */,
+				7B19BF791CFDC11900930EF1 /* TCPlayerBottomView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

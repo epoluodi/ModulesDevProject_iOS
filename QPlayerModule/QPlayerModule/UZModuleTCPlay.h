@@ -11,8 +11,9 @@
 #import "NSDictionaryUtils.h"
 #import <TCPlayerSDK/TCPlayerSDK.h>
 #import "TCPlayItem.h"
+#import "TCPlayerBottomView.h"
 
-#define BtnControlWH 80;
+#define BtnControlWH (80)
 
 @interface UZModuleTCPlay : UZModule<TCPlayerEngineDelegate>
 {
@@ -25,7 +26,8 @@
 }
 
 
--(void)addbutton:(NSDictionary *)paramDict;
 //初始化播放插件
 -(void)initTCPlayView:(NSDictionary *)paramDict;
+
+
 @end

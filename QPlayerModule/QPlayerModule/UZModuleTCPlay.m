@@ -17,9 +17,9 @@
 
 - (id)initWithUZWebView:(UZWebView *)webView_ {
     if (self = [super initWithUZWebView:webView_]) {
-        _playerView = [[TCPlayerView alloc] initControlView:nil bottomView:nil];
+        _playerView = [[TCPlayerView alloc] initControlView:nil bottomView:[TCPlayerBottomView class]];
         _forceview = [[UIView alloc] init];
-        [_forceview setBackgroundColor:[[UIColor blackColor] colorWithAlphaComponent:0.3]];
+        [_forceview setBackgroundColor:[[UIColor blackColor] colorWithAlphaComponent:0.6]];
         _btncontrol = [[UIButton alloc] init];
         [_btncontrol setImage:[UIImage imageNamed:@"res_moduleDemo/play"] forState:UIControlStateNormal];
         _playerView.playerDelegate = self;
@@ -61,11 +61,9 @@
     }
     _playerView.frame =CGRectMake(x, y, w, h);
     _forceview.frame = CGRectMake(0, 0, _playerView.frame.size.width, _playerView.frame.size.height);
-    [_playerView addSubview:_forceview];
-    int _wh = BtnControlWH;
-    _btncontrol.frame = CGRectMake(w /2 - _wh /2, h/2  - _wh /2, _wh, _wh);
+    _btncontrol.frame = CGRectMake(w /2 - BtnControlWH /2, h/2  - BtnControlWH /2, BtnControlWH, BtnControlWH);
     [_forceview addSubview:_btncontrol];
-       [self addSubview:_playerView fixedOn:nil fixed:NO];
+    [self addSubview:_playerView fixedOn:nil fixed:NO];
     
     
     TCPlayItem *item = [[TCPlayItem alloc] init];
@@ -75,12 +73,11 @@
     
     
     if (isautoplay){
-        [_forceview setHidden:YES];
         [_playerView play:item];
     }
     else
     {
-      
+        [_playerView addSubview:_forceview];
     }
 }
 
@@ -89,17 +86,10 @@
 //播放控制
 -(void)playControl
 {
-    if([_playerView isPlaying])
-    {
-        [_playerView pause];
-        return;
-    }
-    if ([_playerView isPaused])
-    {
-        [_playerView play];
-        return;
-    }
-    
+    [_forceview removeFromSuperview];
+    [_playerView setIsEnableAutoHideBottomView:YES];
+    [_playerView play];
+
 }
 
 
@@ -113,6 +103,16 @@
     
 }
 
+-(void)onStateChanged:(id<TCPlayerEngine>)player toState:(TCPlayerState)state
+{
+    switch (state) {
+        case TCPlayerState_Pause:
+            [_playerView addSubview:_forceview];
+            [[_playerView bottomView] setHidden:YES];
+            [_playerView setIsEnableAutoHideBottomView:NO];
+            break;
+    }
+}
 #pragma mark  -
 
 
